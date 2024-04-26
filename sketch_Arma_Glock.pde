@@ -1,54 +1,62 @@
+PImage img;
 void setup(){
 size(800,400);
 background(#FFFFFF);
 fill(#000000);
 text("TOMAS PIANELLI",20,380);
+img =loadImage ("Arma de ejemplo para programar.jpg");
 }
 void draw(){
 
+image (img,0,0,400,400);
 //Primera parte escalon del caño
 fill(#7B8393);
-triangle(45,40,65,40,55,20);
-triangle(680,40,700,40,690,20);
-rect(20,40,700,60);
+triangle(418,19,425,9,430,19);
+rect(733,6,10,15);
+rect(413,19,345,60);
 fill(#000000);
-rect(680,45,20,50);
-rect(650,45,20,50);
-rect(620,45,20,50);
-rect(590,45,20,50);
-rect(560,45,20,50);
-rect(530,45,20,50);
-rect(500,45,20,50);
+rect(736,25,5,50);
+rect(724,25,5,50);
+rect(712,25,5,50);
+rect(700,25,5,50);
+rect(688,25,5,50);
+rect(676,25,5,50);
+rect(664,25,5,50);
 fill(#434748);
-ellipse(20,70,30,50);
+ellipse(410,47,15,50);
 fill(#000000);
-text("GLOCK",65,75);
-text("17",115,75);
-text("AUSTRIA",175,75);
-text("9X19",330,75);
+text("GLOCK",430,55);
+text("17",475,55);
+text("AUSTRIA",510,55);
+text("9X19",580,55);
 
 //Segundaparte escalon del caño
-fill(#000000);
-rect(20,100,700,40);
 fill(#434748);
-rect(470,100,20,20);
-ellipse(20,120,15,25);
-rect(340,110,10,20);
-ellipse(420,105,10,10);
-ellipse(415,118,10,10);
+rect(414,77,344,45);
+ellipse(415,100,15,25);
+ellipse(620,87,10,10);
+ellipse(605,105,10,10);
+fill(#000000);
+rect(575,90,5,20);
+rect(640,78,20,20);
+line(632,104,668,104);
+
 
 //Culata
-rect(470,140,160,240);
+fill(#434748);
+rect(630,122,110,250);
+fill(#434748);
+rect(540,122,90,75);
 fill(#FFFFFF);
-ellipse(400,160,160,70);
-fill(#000000);
-triangle(410,125,460,120,415,180);
+ellipse(590,155,80,70);
+fill(#434748);
+triangle(607,122,593,173,630,138);
 fill(#FFFFFF);
-ellipse(430,135,10,10);
+ellipse(610,135,8,8);
 fill(#597179);
-rect(500,200,100,150);
+rect(640,172,90,160);
 fill(#000000);
-rect(550,300,30,30);
+rect(680,284,30,30);
 
 println("X:");
 println(mouseX);
